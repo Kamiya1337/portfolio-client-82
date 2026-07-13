@@ -5,7 +5,7 @@ import avatarImage from '../../docs/avatar.png';
 export default function HomeTab() {
   const { student, overview } = portfolioData;
 
-  const studentNumber = '25040628';
+  const studentNumber = '25041954';
   const nameParts = student.name.split(' ');
   const nameFirstLine = nameParts.slice(0, 2).join(' ');
   const nameSecondLine = nameParts.slice(2).join(' ');
