@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NMA | Academic Portfolio - Nguyễn Thị Minh Anh</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#d62f70",
+                    "surface-bright": "#fdf7ff",
+                    "on-primary-fixed-variant": "#8f0043",
+                    "surface-container-low": "#f8f1ff",
+                    "on-tertiary-fixed": "#350c20",
+                    "error-container": "#ffdad6",
+                    "secondary": "#b51a57",
+                    "surface-variant": "#e8def9",
+                    "surface-tint": "#b8105a",
+                    "surface": "#fdf7ff",
+                    "on-tertiary-container": "#fffbff",
+                    "on-secondary-fixed-variant": "#8f0041",
+                    "tertiary-container": "#9d647a",
+                    "surface-container-highest": "#e8def9",
+                    "inverse-primary": "#ffb1c4",
+                    "on-secondary-container": "#5e0028",
+                    "primary-fixed-dim": "#ffb1c4",
+                    "surface-container": "#f3eaff",
+                    "primary": "#b40a58",
+                    "secondary-container": "#fd568b",
+                    "secondary-fixed-dim": "#ffb1c2",
+                    "on-background": "#1e192b",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#eee4ff",
+                    "inverse-on-surface": "#f5eeff",
+                    "background": "#fdf7ff",
+                    "on-secondary": "#ffffff",
+                    "outline": "#8c7076",
+                    "on-surface": "#1e192b",
+                    "on-secondary-fixed": "#3f0018",
+                    "outline-variant": "#e0bec5",
+                    "inverse-surface": "#332d41",
+                    "on-tertiary-fixed-variant": "#69374c",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#fffbff",
+                    "on-primary-fixed": "#3f001a",
+                    "secondary-fixed": "#ffd9e0",
+                    "tertiary": "#814c61",
+                    "primary-fixed": "#ffd9e0",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#f7b4cd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "24px",
+                    "unit": "8px",
+                    "container-max": "1200px",
+                    "margin-desktop": "64px",
+                    "gutter": "32px",
+                    "section-gap": "128px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "caption": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.1", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fdf7ff;
+            color: #1e192b;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .editorial-border {
+            border: 1px solid #e0bec5;
+        }
+        .mask-image-radial {
+            mask-image: radial-gradient(circle, white, transparent);
+        }
+        .decorative-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            pointer-events: none;
+            user-select: none;
+        }
+        .pill-shadow {
+            box-shadow: 0 4px 20px -2px rgba(180, 10, 88, 0.08);
+        }
+        .hero-bg-text {
+            font-size: 15rem;
+            line-height: 1;
+            font-weight: 900;
+            opacity: 0.03;
+            position: absolute;
+            z-index: 0;
+            letter-spacing: -0.05em;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
+<div class="font-display-lg text-headline-md font-bold text-primary tracking-tighter">NMA | Minh Anh</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-primary font-bold border-b-2 border-primary font-label-md text-label-md transition-all" href="#profile">Hồ sơ</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-all" href="#learning">Bài tập</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-all" href="#summary">Tổng kết</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden lg:block font-label-md text-label-md text-outline uppercase tracking-widest">International Language Portfolio</span>
+<button class="bg-primary text-white px-6 py-2 rounded-full font-label-md text-label-md hover:scale-95 duration-200 transition-all shadow-lg shadow-primary/20">Liên hệ</button>
+</div>
+</div>
+</nav>
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-20 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="hero-bg-text top-0 -left-10">ULIS</div>
+<div class="hero-bg-text bottom-0 -right-20">LANGUAGE</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10">
+<div class="lg:col-span-8">
+<div class="space-y-4 mb-8">
+<span class="inline-block py-1 px-4 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-caption uppercase tracking-tighter">Công nghệ số &amp; AI • 2024</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-4xl leading-[0.9]">
+                            Portfolio học phần <br/>
+<span class="text-on-surface">Nguyễn Thị Minh Anh</span>
+</h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-4 border-primary pl-6 py-2 italic bg-surface-container-low/50">
+                        "Kỹ năng số, AI và tư duy học tập trong Ngành Ngôn ngữ và Văn hóa Anh - Hành trình khai phóng tiềm năng trong kỷ nguyên số."
+                    </p>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-end space-y-6">
+<div class="editorial-border p-8 rounded-2xl bg-white/40 backdrop-blur-sm space-y-4 relative overflow-hidden group">
+<div class="absolute -top-4 -right-4 w-20 h-20 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
+<h3 class="font-headline-md text-headline-md text-primary">Academic Info</h3>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span class="font-semibold text-on-surface">Major</span>
+<span>Ngôn ngữ Anh</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span class="font-semibold text-on-surface">School</span>
+<span>ULIS - VNU</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span class="font-semibold text-on-surface">ID</span>
+<span>24040xxx</span>
+</li>
+</ul>
+</div>
+<div class="flex gap-4">
+<div class="flex-1 bg-surface-container-high p-4 rounded-xl editorial-border text-center">
+<div class="font-display-lg text-headline-lg text-primary">06</div>
+<div class="font-label-md text-caption uppercase text-on-surface-variant">Skills</div>
+</div>
+<div class="flex-1 bg-primary text-white p-4 rounded-xl text-center shadow-xl shadow-primary/20">
+<div class="font-display-lg text-headline-lg">AI</div>
+<div class="font-label-md text-caption uppercase opacity-80">Focused</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Profile Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="profile">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Image Cluster -->
+<div class="lg:col-span-5 relative">
+<div class="relative z-10 editorial-border p-4 bg-white rounded-2xl rotate-2 hover:rotate-0 transition-transform duration-500 shadow-xl shadow-outline-variant/20">
+<div class="aspect-[4/5] overflow-hidden rounded-xl relative bg-surface-container">
+<img alt="Profile Photo" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A professional and elegant portrait of a young German woman with long dark hair, wearing a sophisticated cream blazer. She is standing in a brightly lit, minimalist academic setting with soft natural light streaming through large windows. The overall aesthetic is clean, light-mode, and editorial with a warm, intellectual atmosphere, reflecting a high-end academic portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOde1gIYOrddjG_Aqq8ySa4GP1ANLbcyz2AwG8_26-KF3agpOJ0FuRAtcUX1SNoXi5HnlVQnNjsbnDrR9lGRTS_XcHflC3v6HXvP8ZFRnesU6su3I6m_fwH1AKlz6i0X8mP-LdXMuSc8PrR4gU7w6rubPcc7G-wK7w_YkK6zxDqJ6R9nNrszWPCJrhRlhUn3qIM1xiIWayV0IBoogzkgHCQyBtGEIZAWEyM-3X4-XF7o_F7S9u8KVIi44VAwGOKh8zach7ovgdLflE"/>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<div class="bg-white/90 backdrop-blur px-3 py-1 rounded-lg">
+<span class="font-label-md text-caption text-primary">Ảnh cá nhân / Profile Photo</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative accents -->
+<div class="absolute -top-8 -left-8 w-32 h-32 border-l-2 border-t-2 border-primary/30 rounded-tl-3xl"></div>
+<div class="absolute -bottom-8 -right-8 w-32 h-32 border-r-2 border-b-2 border-primary/30 rounded-br-3xl"></div>
+</div>
+<!-- Bio Cards - Bento Grid -->
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="editorial-border p-8 rounded-3xl bg-surface-container-lowest hover:bg-surface-bright transition-colors group">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center mb-6 text-on-secondary-fixed group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="target">target</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-3">Mục tiêu</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Xây dựng nền tảng tư duy số vững chắc, làm chủ các công cụ AI để tối ưu hóa quá trình nghiên cứu Ngôn ngữ và Văn hóa.</p>
+</div>
+<div class="editorial-border p-8 rounded-3xl bg-surface-container-lowest hover:bg-surface-bright transition-colors group">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center mb-6 text-on-secondary-fixed group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="lightbulb">lightbulb</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-3">Tầm nhìn</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Trở thành một chuyên gia ngôn ngữ nhạy bén với công nghệ, ứng dụng AI để thu hẹp khoảng cách văn hóa trong tương lai.</p>
+</div>
+<div class="md:col-span-2 bg-primary p-10 rounded-[2rem] text-white relative overflow-hidden group shadow-2xl shadow-primary/20">
+<div class="relative z-10 flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1 space-y-4">
+<h4 class="font-headline-lg text-headline-lg">Digital Learning Profile</h4>
+<p class="opacity-90 font-body-lg text-body-lg">Tập trung vào khai phá dữ liệu, viết prompt kỹ thuật cao và cộng tác trực tuyến hiệu quả.</p>
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="bg-white/20 px-4 py-1 rounded-full text-caption font-label-md">Prompt Engineering</span>
+<span class="bg-white/20 px-4 py-1 rounded-full text-caption font-label-md">Data Mining</span>
+<span class="bg-white/20 px-4 py-1 rounded-full text-caption font-label-md">Digital Safety</span>
+</div>
+</div>
+<div class="flex-shrink-0">
+<div class="text-[5rem] font-bold opacity-20 group-hover:opacity-40 transition-opacity">AI+EN</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Learning Index Section -->
+<section class="py-section-gap bg-surface-container-low/30 relative" id="learning">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest block mb-4">Lộ trình học tập</span>
+<h2 class="font-display-lg text-headline-lg md:text-display-lg text-on-surface leading-tight">Learning Index</h2>
+</div>
+<div class="flex-shrink-0 pb-2">
+<div class="h-1 w-32 bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="space-y-4">
+<!-- Tactile List Items -->
+<div class="flex flex-col md:flex-row items-center gap-6 p-6 bg-white rounded-2xl editorial-border hover:translate-x-4 transition-transform duration-300">
+<div class="w-16 h-16 rounded-2xl bg-secondary text-white flex items-center justify-center font-display-lg text-headline-md flex-shrink-0">01</div>
+<div class="flex-grow">
+<h5 class="font-headline-md text-headline-md text-on-surface">Quản lý tệp &amp; Lưu trữ đám mây</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Tối ưu hóa cấu trúc dữ liệu cá nhân và quy tắc lưu trữ học tập.</p>
+</div>
+<div class="material-symbols-outlined text-outline" data-icon="cloud_done">cloud_done</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-6 p-6 bg-white rounded-2xl editorial-border hover:translate-x-4 transition-transform duration-300">
+<div class="w-16 h-16 rounded-2xl bg-secondary text-white flex items-center justify-center font-display-lg text-headline-md flex-shrink-0">02</div>
+<div class="flex-grow">
+<h5 class="font-headline-md text-headline-md text-on-surface">Khai thác dữ liệu học thuật</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Kỹ thuật tìm kiếm nâng cao và đánh giá nguồn tin cậy cho nghiên cứu ngôn ngữ.</p>
+</div>
+<div class="material-symbols-outlined text-outline" data-icon="search_insights">search_insights</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-6 p-6 bg-white rounded-2xl editorial-border hover:translate-x-4 transition-transform duration-300">
+<div class="w-16 h-16 rounded-2xl bg-secondary text-white flex items-center justify-center font-display-lg text-headline-md flex-shrink-0">03</div>
+<div class="flex-grow">
+<h5 class="font-headline-md text-headline-md text-on-surface">Viết Prompt cho AI tạo sinh</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Làm chủ ngôn ngữ hội thoại với AI để tạo ra kết quả chính xác nhất.</p>
+</div>
+<div class="material-symbols-outlined text-outline" data-icon="auto_awesome">auto_awesome</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-6 p-6 bg-white rounded-2xl editorial-border hover:translate-x-4 transition-transform duration-300">
+<div class="w-16 h-16 rounded-2xl bg-secondary text-white flex items-center justify-center font-display-lg text-headline-md flex-shrink-0">04</div>
+<div class="flex-grow">
+<h5 class="font-headline-md text-headline-md text-on-surface">Hợp tác trực tuyến &amp; Làm việc nhóm</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Sử dụng các nền tảng collaborative để tăng hiệu quả teamwork.</p>
+</div>
+<div class="material-symbols-outlined text-outline" data-icon="groups">groups</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-6 p-6 bg-white rounded-2xl editorial-border hover:translate-x-4 transition-transform duration-300">
+<div class="w-16 h-16 rounded-2xl bg-secondary text-white flex items-center justify-center font-display-lg text-headline-md flex-shrink-0">05</div>
+<div class="flex-grow">
+<h5 class="font-headline-md text-headline-md text-on-surface">Sáng tạo nội dung đa phương tiện</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Thiết kế và biên tập nội dung số đáp ứng tiêu chuẩn hiện đại.</p>
+</div>
+<div class="material-symbols-outlined text-outline" data-icon="palette">palette</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-6 p-6 bg-white rounded-2xl editorial-border hover:translate-x-4 transition-transform duration-300">
+<div class="w-16 h-16 rounded-2xl bg-secondary text-white flex items-center justify-center font-display-lg text-headline-md flex-shrink-0">06</div>
+<div class="flex-grow">
+<h5 class="font-headline-md text-headline-md text-on-surface">An toàn số &amp; Đạo đức AI</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Bảo mật thông tin và ứng dụng AI có trách nhiệm trong học tập.</p>
+</div>
+<div class="material-symbols-outlined text-outline" data-icon="security">security</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Studies Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-headline-lg md:text-display-lg text-primary mb-4">Case Studies</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Các dự án và bài tập thực hành tiêu biểu trong suốt học phần.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Case Study Card 1 -->
+<div class="editorial-border rounded-3xl overflow-hidden bg-white group hover:-translate-y-2 transition-all duration-300">
+<div class="aspect-video bg-surface-container relative">
+<img alt="Data Mining" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A futuristic and sleek workspace featuring a high-resolution monitor displaying complex data visualizations and linguistic patterns. The room is styled with minimalist ivory furniture and rose-colored accents, creating an intellectual yet modern aesthetic. The lighting is soft and diffused, reflecting a professional and focused environment suitable for academic data mining studies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkusk2ZUBkRDSvZa-jG3WjxRTbzpfxSeJjKMugRjfVOlNIzXvZr0ZFw_-QLR1xVIpp_5KnA0TlF_gJtmU1JaBdjhcG_XyQ1tnFc86r02GMZ9T6Aa-Z5oAP6J4vHVOdOj3NthakHo4CIdZWMVWQ3LMTGr2X-l4Xc1UsKB8vf6gN8Jps5nX6Bg1ukBZ5BKlU1e7hZgqhZCfnL_oEnrm5c9r4ZRiA2AAvQdePB2TUySf0lxIdyvfIVZ0UZ9D59_vOZyi3-ezxfbY1mnNL"/>
+<span class="absolute top-4 left-4 bg-primary text-white text-[10px] px-3 py-1 rounded-full font-label-md uppercase tracking-widest">Research</span>
+</div>
+<div class="p-8">
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Data Mining ULIS</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Phân tích xu hướng học tập ngoại ngữ thông qua dữ liệu số tại ULIS.</p>
+<div class="mt-6 flex justify-between items-center">
+<span class="font-label-md text-caption text-outline">Nov 2024</span>
+<a class="text-primary font-bold hover:underline" href="#">Xem chi tiết</a>
+</div>
+</div>
+</div>
+<!-- AI Note (Quote Card) -->
+<div class="bg-secondary-fixed text-on-secondary-fixed p-10 rounded-3xl flex flex-col justify-center items-center text-center relative overflow-hidden">
+<span class="material-symbols-outlined text-[4rem] opacity-20 absolute -top-4 -left-4" data-icon="format_quote">format_quote</span>
+<p class="font-body-lg text-body-lg italic font-semibold relative z-10">
+                        "AI không thay thế con người, nhưng người biết sử dụng AI sẽ thay thế người không biết."
+                    </p>
+<div class="mt-6 w-12 h-1 bg-on-secondary-fixed/30"></div>
+<span class="mt-4 font-label-md text-label-md uppercase tracking-wider">AI Integration Note</span>
+</div>
+<!-- Case Study Card 2 -->
+<div class="editorial-border rounded-3xl overflow-hidden bg-white group hover:-translate-y-2 transition-all duration-300">
+<div class="aspect-video bg-surface-container relative">
+<img alt="Prompt Engineering" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A clean, minimalist desk with a sleek laptop showing a sophisticated chat interface with an AI assistant. Surrounding the laptop are elegant academic books and a small vase of pink roses. The overall color palette consists of soft ivories, pale roses, and ink navies, creating a refined and academic atmosphere focused on the intersection of language and artificial intelligence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5OKNACwPOp1FxPdNpEwxRaCo-UK6zUb9QXJOQO72uocNu65ODAeg6NJ5yy7SEqTHd8qQOaAINXNJxwqVak8GiyivEpRc53XhY6HWv86xR4FoTPaw7VUNWRZDAPLdYq5eG2lBHu8mNebXKdylxspmCH4ZW3idP-Wj5gOFhYy_XFpTkEiYCYT6QesajyYxN16MORz6xHuQj0CDm6plGrlrop2XmtLJco2snBAaHaY0EOSz8EgoEX96QjqFt3Ll5POa_1hbmz6tBkVJh"/>
+<span class="absolute top-4 left-4 bg-primary text-white text-[10px] px-3 py-1 rounded-full font-label-md uppercase tracking-widest">AI Prompt</span>
+</div>
+<div class="p-8">
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Prompting Workshop</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Xây dựng bộ prompt chuẩn cho việc dịch thuật văn học và phân tích ngữ pháp.</p>
+<div class="mt-6 flex justify-between items-center">
+<span class="font-label-md text-caption text-outline">Oct 2024</span>
+<a class="text-primary font-bold hover:underline" href="#">Xem chi tiết</a>
+</div>
+</div>
+</div>
+<!-- Case Study Card 3 (Asymmetric overlap style) -->
+<div class="lg:col-span-2 editorial-border rounded-[2.5rem] p-10 bg-surface-bright flex flex-col md:flex-row gap-10 items-center">
+<div class="flex-1 space-y-6">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 bg-primary rotate-45"></span>
+<span class="font-label-md text-label-md text-primary uppercase font-bold">Featured Project</span>
+</div>
+<h4 class="font-display-lg text-headline-lg text-on-surface">Digital Content Strategy for Cultural Exchange</h4>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Dự án cuối khóa tích hợp kỹ năng sáng tạo nội dung đa phương tiện và ứng dụng AI để giới thiệu văn hóa Việt Nam ra quốc tế.</p>
+<button class="bg-on-surface text-white px-8 py-3 rounded-full font-label-md text-label-md hover:bg-primary transition-colors">Đọc Full Report</button>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Teamwork" class="w-full h-full object-cover" data-alt="A diverse group of university students collaborating in a modern, sun-drenched study lounge. They are engaged in a lively discussion around a large wooden table with tablets, notebooks, and a shared digital screen. The space is decorated with plants and elegant minimalist furniture, maintaining a premium academic aesthetic with a light and airy feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDun0sFCXmryflGHm4rhkVXpJDqOBoEfqWsHUtAlmkzkyB1983HagTXD4iDDR7EA3mXvnxmaxEZHOgQ2SS4pGfbEGgSCzq8e_PVMcWoVEfreIlQiNcsnpWUGmWhG2ujd8mqmq6DF7tAfcNSVRuG09myOBoFg6uh65iMTyLA-LF4keK4NX42j1O4goyZ3UjmoToHU0VEFwEUC12wjn7ET7OhkiUovoIZUyNOiGDXwngCa2-YlyHoXlykLTuUktTs2eKf-OU9N7M_vQdC"/>
+</div>
+</div>
+<!-- Case Study Card 4 -->
+<div class="editorial-border rounded-3xl overflow-hidden bg-white group hover:-translate-y-2 transition-all duration-300">
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<div class="material-symbols-outlined text-primary text-4xl" data-icon="verified_user">verified_user</div>
+<span class="font-label-md text-caption text-outline">Security First</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Digital Safety Audit</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Quy trình tự đánh giá và bảo mật dấu chân số cá nhân trên không gian mạng.</p>
+<div class="mt-12 flex justify-between items-center">
+<span class="font-label-md text-caption text-outline">Dec 2024</span>
+<a class="text-primary font-bold hover:underline" href="#">Chi tiết</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Summary / Learning Outcomes -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto bg-white rounded-[3rem] mb-20 shadow-sm border border-outline-variant/30" id="summary">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 p-8 md:p-16">
+<div class="lg:col-span-4">
+<h2 class="font-display-lg text-headline-lg text-on-surface mb-6">Tổng kết <br/><span class="text-primary">Kết quả đạt được</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">
+                        "Hành trình tại học phần Nhập môn Công nghệ số đã thay đổi hoàn toàn cách tôi tiếp cận với ngôn ngữ."
+                    </p>
+</div>
+<div class="lg:col-span-8 space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-4 border-l border-primary/20 pl-6">
+<h5 class="font-headline-md text-headline-md text-primary">Tư duy hệ thống</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Khả năng tổ chức và quản lý thông tin một cách khoa học trên các nền tảng đám mây.</p>
+</div>
+<div class="space-y-4 border-l border-primary/20 pl-6">
+<h5 class="font-headline-md text-headline-md text-primary">Làm chủ công cụ AI</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Sử dụng AI như một cộng sự đắc lực trong học tập, nghiên cứu và sáng tạo.</p>
+</div>
+<div class="space-y-4 border-l border-primary/20 pl-6">
+<h5 class="font-headline-md text-headline-md text-primary">Kỹ năng cộng tác</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Làm việc hiệu quả trong môi trường số, kết nối và chia sẻ kiến thức không giới hạn.</p>
+</div>
+<div class="space-y-4 border-l border-primary/20 pl-6">
+<h5 class="font-headline-md text-headline-md text-primary">Đạo đức số</h5>
+<p class="font-body-md text-body-md text-on-surface-variant">Xây dựng ý thức trách nhiệm về bảo mật và bản quyền trong kỷ nguyên trí tuệ nhân tạo.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-margin-desktop py-12 max-w-container-max mx-auto gap-12">
+<div class="space-y-4">
+<div class="font-display-lg text-headline-md text-primary">Nguyễn Thị Minh Anh</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                    Sinh viên năm nhất - Khoa Ngôn ngữ và Văn hóa Anh<br/>
+                    Trường Đại học Ngoại ngữ - ĐHQGHN (ULIS)
+                </p>
+<div class="flex gap-4 pt-2">
+<a class="w-10 h-10 rounded-full editorial-border flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+</a>
+<a class="w-10 h-10 rounded-full editorial-border flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="link">link</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="space-y-4">
+<h6 class="font-label-md text-label-md font-bold uppercase text-primary">Quick Links</h6>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant">
+<li><a class="hover:text-secondary transition-all" href="#">ULIS Website</a></li>
+<li><a class="hover:text-secondary transition-all" href="#">VNU Portal</a></li>
+<li><a class="hover:text-secondary transition-all" href="#">LMS VNU</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h6 class="font-label-md text-label-md font-bold uppercase text-primary">Resources</h6>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant">
+<li><a class="hover:text-secondary transition-all" href="#">AI Tools</a></li>
+<li><a class="hover:text-secondary transition-all" href="#">Digital Library</a></li>
+<li><a class="hover:text-secondary transition-all" href="#">Learning Guide</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-outline-variant/30 text-center md:text-left">
+<p class="font-body-md text-caption text-on-surface-variant opacity-60">© 2024 Nguyễn Thị Minh Anh • Academic Portfolio • ĐH Ngoại ngữ - ĐHQGHN</p>
+</div>
+</footer>
+<script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
